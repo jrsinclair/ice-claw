@@ -5,14 +5,19 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "fast-check": "1.24.2"
+    "build": "parcel build index.html",
+    "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.3.1",
+    "fast-check": "^2.19.0",
+    "jest": "^27.3.1",
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "keywords": [],
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
